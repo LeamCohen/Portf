@@ -415,22 +415,22 @@ span{
     transform-origin: left;
 }
 .progress-line.py span{
-    width: 95%;
+    width: 70%;
 }
 .progress-line.C span{
-    width: 90%;
+    width: 100%;
 }
-.progress-line.ASM span{
-    width: 70%;
+.progress-line.gbb span{
+    width: 90%;
 }
 .progress-line.Bash span{
     width: 80%;
 }
-.progress-line.WD span{
-    width: 85%;
-}
 .progress-line.Net span{
     width: 95%;
+}
+.progress-line.pyjs span{
+    width: 100%;
 }
 .progress-line.CS span{
     width: 95%;
@@ -439,16 +439,13 @@ span{
     width: 90%;
 }
 .progress-line.Linux span{
-    width: 95%;
+    width: 85%;
 }
 .progress-line.SQL span{
     width: 70%;
 }
-.progress-line.IDA span{
-    width: 85%;
-}
 .progress-line.MOS span{
-    width: 95%;
+    width: 98%;
 }
 .progress-line span::after{
     position: absolute;
@@ -463,19 +460,19 @@ span{
     opacity: 0;
 }
 .progress-line.py span::after{
-    content: "95%";
+    content: "70%";
 }
 .progress-line.C span::after{
-    content: "90%";
+    content: "100%";
 }
-.progress-line.ASM span::after{
-    content: "80%";
+.progress-line.gbb span::after{
+    content: "90%";
 }
 .progress-line.Bash span::after{
     content: "80%";
 }
-.progress-line.WD span::after{
-    content: "85%";
+.progress-line.pyjs span::after{
+    content: "100%";
 }
 .progress-line.Net span::after{
     content: "95%";
@@ -487,16 +484,13 @@ span{
     content: "90%";
 }
 .progress-line.Linux span::after{
-    content: "95%";
+    content: "85%";
 }
 .progress-line.SQL span::after{
     content: "70%";
 }
-.progress-line.IDA span::after{
-    content: "85%";
-}
 .progress-line.MOS span::after{
-    content: "95%";
+    content: "98%";
 }
 .progress-line span::before{
     content: "";
