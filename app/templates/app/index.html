@@ -1,0 +1,324 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Leam
+        	<span>Cohen</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+        	<a href="#home" class="acive">Home</a>
+        	<a href="#military">Military</a>
+            <a href="#education">Education</a>
+        	<a href="#skills">Skills</a>
+        	<a href="#projects">Projects</a>
+        	<!--<a href="#contact">Contact</a>-->
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Leam</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>After living abroad for eleven years in Milan, I'm seeking for a challenging and impactful job in the Cyber Security industry where I can leverage my skills.</p>
+            <div class="social-icons">
+                <a href="https://github.com/LeamCohen"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/liamco21"><i class='bx bxl-linkedin'></i></a>
+                <!--<a href="#"><i class='bx bxl-instagram'></i></a>-->
+            </div>
+            <!--
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            -->
+        </div>
+            <div class="home-img">
+                <!--<img src="{% static 'app/pr.jpg' %}" alt="10">--><img src="{% static 'app/Unknown.jpeg' %}" alt="">
+            </div>
+    </section>
+    <section class="education" id="military">
+        <h2 class="heading">Military</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Team Lead</h3>
+                        <p>Lead a team of four developers and data scientists.
+                            <br>Created complex queries to enhanche data understanding.
+                            <br>Worked closedly with Unit 8200.
+                        </p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Intelligence Analyst</h3>
+                        <p>Conducted deep research and data analysis for Intell report creations.
+                            <br>Deep knowledge of Intell methodologies and systeems.
+                        </p>
+                    </div>
+            </div> 
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Current</div>
+                <div class="timeline-content">
+                        <h3>Try Hack Me Certifications of Completion</h3>
+                        <p>
+                            Jr. Pentester <br>
+                            Offensive Pentesting <br>
+                            Red Teaming <br>
+                        </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - current</div>
+                    <div class="timeline-content">
+                        <h3>Open University</h3>
+                        <p>
+                            Life sciences.
+                        </p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>Jewish Comunity of Milan High School</h3>
+                        <p>
+                            Studied Applied Sciences which includes Computer Science, Phisics, Chemestry and Biology.
+                        </p>
+                    </div>
+            </div> 
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="heading">My <span>Skills</span></h1>
+        <div class="skills-content">
+            <h1 class="sub-title">Technical Skills</h1>
+            <div class="technical-bars">
+                <div class="bar">
+                    <div class="info">
+                        <span>Reverse Engieering</span>
+                    </div>
+                    <div class="progress-line py">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>ARM and C programming</span>
+                    </div>
+                    <div class="progress-line C">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python and JS scripting</span>
+                    </div>
+                    <div class="progress-line C">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>gdb debugging</span>
+                    </div>
+                    <div class="progress-line C">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Docker & K8s</span>
+                    </div>
+                    <div class="progress-line Bash">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Elettronics</span>
+                    </div>
+                    <div class="progress-line Net">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Git</span>
+                    </div>
+                    <div class="progress-line Git">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Linux & Windows Internals</span>
+                    </div>
+                    <div class="progress-line Linux">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>SQL</span>
+                    </div>
+                    <div class="progress-line SQL">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Mirosoft Office Suite</span>
+                    </div>
+                    <div class="progress-line MOS">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        <!--
+        </div>
+        <div class="skills-content">-->
+            <h1 class="sub-title">Interpersonal Skills</h1>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Team worker</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text" id="oot">Out of the Box Thinking</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Analytical Skills</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Working Under Pressure</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+
+            <div class="wrapper">
+                <a href="https://github.com/LeamCohen/BSAlgo/blob/main/BubbleSort.c">
+                    <div class="project-item">
+                        <img src="{% static '/app/bsa.svg.png' %}" alt="">
+                        <h1>B.S.A.</h1>
+                        <div class="rating">
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i><!--
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>
+                            <i class='bx bxs-star' id="star"></i>-->
+                        </div>
+                        <p>
+                            Basic CLI Bubble Sorting Alghorithm written in C programming language.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/LeamCohen/Olimpus">
+                <div class="project-item">
+                    <img src="{% static '/app/rk.png' %}" alt="">
+                    <h1>Olympus</h1>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        An Advance Persistent Threat RootKit written in C.
+                    </p>
+                </div>
+                </a>
+                
+                <a href="https://github.com/LeamCohen/Olimpus">
+                <div class="project-item">
+                    <img src="" alt="">
+                    <h1>Orion</h1>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        A worm
+                    </p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/LeamCohen"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/liamco21"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="">FAQ</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <p class="copyright">
+            © Leam Cohen | All Rights Reserved
+        </p>
+    </footer>
+    <script src="{% static 'app/app.js' %}"></script>
+</body>
+</html>
