@@ -1,11 +1,14 @@
 from pathlib import Path
 import certifi, os
-os.environ['SSL_CERT_FILE'] = certifi.where()
+from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = 'django-insecure-8gg1^w9q&+y((%g%v9v_jyzbg$_)i4)0(y5u1ehc%u954_^@u-'
-DEBUG = True
-ALLOWED_HOSTS = []
+BASE_DIR = Path(__file__).resolve().parent
+os.environ['SSL_CERT_FILE'] = certifi.where()
+env_path = load_dotenv(os.path.join(BASE_DIR, '.env'))
+load_dotenv(env_path)
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-8gg1^w9q&+y((%g%v9v_jyzbg$_)i4)0(y5u1ehc%u954_^@u-')
+DEBUG = False
+ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
